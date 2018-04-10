@@ -2,13 +2,22 @@
 
 These images provide all of the required dependencies for running Cypress in Docker. They're based
 on the [official Cypress images](https://github.com/cypress-io/cypress-docker-images), but adapted
-to the development toolchain (e.g. to use the latest **node** version) employed by the team in
-charge of the web front-end of [Moss](https://moss.sh).
+to the development toolchain employed by the team in charge of the web front-end of
+[Moss](https://moss.sh).
+
+E.g. these images may differ with respect to the official ones in the versions of **Node.js**,
+**Chrome** or **Firefox** that they contain.
 
 
 ## Images
 
-Work in progress.
+All images are available on Docker Hub.
+
+| Image | Node.js | Browsers | Status |
+| ----- | ------- | -------- | ------ |
+| [doalitic/cypress-base:8](base/8) | 8.11 | - | [![Docker Build Status](https://img.shields.io/docker/build/doalitic/cypress-base.svg)](https://hub.docker.com/r/doalitic/cypress-base/) |
+| [doalitic/cypress-chrome:stable](chrome/stable) | 8.11 | Chrome 65 | [![Docker Build Status](https://img.shields.io/docker/build/doalitic/cypress-chrome.svg)](https://hub.docker.com/r/doalitic/cypress-chrome/) |
+| [doalitic/cypress-firefox:59](firefox/59) | 8.11 | Firefox 59 | [![Docker Build Status](https://img.shields.io/docker/build/doalitic/cypress-firefox.svg)](https://hub.docker.com/r/doalitic/cypress-firefox/) |
 
 
 ## Usage
@@ -35,11 +44,6 @@ Example **Dockerfile**s to install and run Cypress.
   ```
 
 - Sure you get the idea :D For more images, please see the table above.
-
-
-## Docker Hub
-
-Work in progress.
 
 
 ## Contributing
